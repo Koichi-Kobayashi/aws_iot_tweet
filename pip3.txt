@@ -1,0 +1,4 @@
+pip3 install requests_oauthlib -t apex/functions/tweet/vendor/
+pip3 install pytz -t apex/functions/tweet/vendor/
+pip3 install emoji -t apex/functions/tweet/vendor/
+pip3 install boto3 --upgrade -t apex/functions/tweet/vendor/

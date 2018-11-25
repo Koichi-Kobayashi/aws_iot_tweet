@@ -1,0 +1,18 @@
+{
+  "description": "TwitterのAPIを使ってつぶやく",
+  "runtime": "python3.7",
+  "Handler": "tweet.lambda_handler",
+  "memory": 128,
+  "timeout": 300,
+  "role": "arn:aws:iam::123456789012:role/lambda-execution-role",
+  "environment": {
+    "PYTHONPATH": "/var/runtime:/var/task/vendor",
+    "ConsumerKey": "enter your Consumer Key",
+    "ConsumerSecret": "enter your Consumer Secret",
+    "AccessToken": "enter your Access Token",
+    "AccesssTokenSecert": "enter your Accesss Token Secert",
+    "clickType_single": ":relaxed::coffee:",
+    "clickType_double": "食べ過ぎ我慢:rice::meat_on_bone::thumbsup:",
+    "clickType_long": "食べちゃった:tired_face:"
+  }
+}
