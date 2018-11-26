@@ -1,5 +1,11 @@
 # aws_iot_tweet
 AWS の IoT 1-Click で呼び出す Lambda から Twitter につぶやく
+IoT 1-Click で Lambda を呼び出したときの日時とボタンのタイプを DynamoDB に保存。  
+tweet.py の dynamo 関数に処理を記述。
+
+|テーブル名|キー|値|  
+|:---:|:---:|:---:|  
+|button_event|date_time|click_type|
 
 # 環境に合わせて修正する箇所
 apex/functions/tweet/function.json  
